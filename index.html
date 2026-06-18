@@ -3,10 +3,281 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <title>Monblan project</title>
+
   </head>
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+    <header>
+      <img src="src/img/monblanLogo.svg" alt="monblan Logo">
+
+      <section class="header__info">
+        <div class="header__first">
+          <p class="header__name">monblanproject</p>
+          <p class="header__start">Start on  17-02-2016</p>
+        </div>
+
+        <div class="header__second">
+          <p class="posts"><span>870</span> posts</p>
+          <p class="followers"><span>11,787</span> followers</p>
+          <p class="following"><span>112</span> following</p>
+        </div>
+
+        <div class="header__third">
+          <p>Date</p>
+          <div class="date">
+            <input type="text" id="pickfirst" placeholder="from">
+          </div>
+
+          <div class="date">
+            <input type="text" id="pick" >
+          </div>
+
+        </div>
+      </section>
+    </header>
+
+    <main class="main">
+      <section>
+        <div class="selection__icons">
+          <button type="button" id="gridButton" class="selection clickable">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+              <rect width="6" height="6" fill="#C8C8C8"/>
+              <rect x="8" width="6" height="6" fill="#C8C8C8"/>
+              <rect x="16" width="6" height="6" fill="#C8C8C8"/>
+              <rect y="8" width="6" height="6" fill="#C8C8C8"/>
+              <rect y="16" width="6" height="6" fill="#C8C8C8"/>
+              <rect x="8" y="8" width="6" height="6" fill="#C8C8C8"/>
+              <rect x="8" y="16" width="6" height="6" fill="#C8C8C8"/>
+              <rect x="16" y="8" width="6" height="6" fill="#C8C8C8"/>
+              <rect x="16" y="16" width="6" height="6" fill="#C8C8C8"/>
+            </svg>
+          </button>
+          
+          <button type="button" id="listButton" class="selection">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="22" viewBox="0 0 24 22" fill="none">
+              <rect width="6" height="6" fill="#C8C7C7"/>
+              <rect y="8" width="6" height="6" fill="#C8C7C7"/>
+              <rect y="16" width="6" height="6" fill="#C8C7C7"/>
+              <rect x="9" y="10" width="15" height="2" fill="#C8C7C7"/>
+              <rect x="9" y="18" width="15" height="2" fill="#C8C7C7"/>
+              <rect x="9" y="2" width="15" height="2" fill="#C8C7C7"/>
+            </svg>
+          </button>
+        </div>
+
+        <div class="selection__list">
+        </div>
+
+        <ul>
+          <li>
+            <img src="src/img/selection/list/img1.png" srcset="src/img/selection/list/img1.png 1x, src/img/selection/list/img1@2x.png 2x" alt="first image">
+            <div class="info">
+              <div class="today">
+                <p>Today</p>
+                <p><img src="src/img/ci_heart-fill.svg" alt="heart"> 128</p>
+                <p><img src="src/img/ic_round-mode-comment.svg" alt="info"> 31</p>
+              </div>
+
+              <div class="date">
+                <p>9-08-2016</p>
+                <p><img src="src/img/ci_heart-fill.svg" alt="heart"> 128</p>
+                <p><img src="src/img/ic_round-mode-comment.svg" alt="info"> 31</p>
+              </div>
+
+              <div class="upload">
+                <p>Image upload</p>
+                <p>11-04-2016</p>
+              </div>
+            </div>
+          </li>
+          
+          <li>
+            <img src="src/img/selection/list/img2.png" srcset="src/img/selection/list/img2.png 1x, src/img/selection/list/img2@2x.png 2x" alt="second image">
+            <div class="info">
+              <div class="today">
+                <p>Today</p>
+                <p><img src="src/img/ci_heart-fill.svg" alt="heart"> 128</p>
+                <p><img src="src/img/ic_round-mode-comment.svg" alt="info"> 31</p>
+              </div>
+
+              <div class="date">
+                <p>9-08-2016</p>
+                <p><img src="src/img/ci_heart-fill.svg" alt="heart"> 128</p>
+                <p><img src="src/img/ic_round-mode-comment.svg" alt="info"> 31</p>
+              </div>
+
+              <div class="upload">
+                <p>Image upload</p>
+                <p>11-04-2016</p>
+              </div>
+            </div>
+          </li>
+          
+          <li>
+            <img src="src/img/selection/list/img3.png" srcset="src/img/selection/list/img3.png 1x, src/img/selection/list/img3@2x.png 2x" alt="3 image">
+            <div class="info">
+              <div class="today">
+                <p>Today</p>
+                <p><img src="src/img/ci_heart-fill.svg" alt="heart"> 128</p>
+                <p><img src="src/img/ic_round-mode-comment.svg" alt="info"> 31</p>
+              </div>
+
+              <div class="date">
+                <p>9-08-2016</p>
+                <p><img src="src/img/ci_heart-fill.svg" alt="heart"> 128</p>
+                <p><img src="src/img/ic_round-mode-comment.svg" alt="info"> 31</p>
+              </div>
+
+              <div class="upload">
+                <p>Image upload</p>
+                <p>11-04-2016</p>
+              </div>
+            </div>
+          </li>
+          
+          <li>
+            <img src="src/img/selection/list/img4.png" srcset="src/img/selection/list/img4.png 1x, src/img/selection/list/img4@2x.png 2x" alt="4 image">
+            <div class="info">
+              <div class="today">
+                <p>Today</p>
+                <p><img src="src/img/ci_heart-fill.svg" alt="heart"> 128</p>
+                <p><img src="src/img/ic_round-mode-comment.svg" alt="info"> 31</p>
+              </div>
+
+              <div class="date">
+                <p>9-08-2016</p>
+                <p><img src="src/img/ci_heart-fill.svg" alt="heart"> 128</p>
+                <p><img src="src/img/ic_round-mode-comment.svg" alt="info"> 31</p>
+              </div>
+
+              <div class="upload">
+                <p>Image upload</p>
+                <p>11-04-2016</p>
+              </div>
+            </div>
+          </li>
+          
+          <li>
+            <img src="src/img/selection/list/img5.png" srcset="src/img/selection/list/img5.png 1x, src/img/selection/list/img5@2x.png 2x" alt="5 image">
+            <div class="info">
+              <div class="today">
+                <p>Today</p>
+                <p><img src="src/img/ci_heart-fill.svg" alt="heart"> 128</p>
+                <p><img src="src/img/ic_round-mode-comment.svg" alt="info"> 31</p>
+              </div>
+
+              <div class="date">
+                <p>9-08-2016</p>
+                <p><img src="src/img/ci_heart-fill.svg" alt="heart"> 128</p>
+                <p><img src="src/img/ic_round-mode-comment.svg" alt="info"> 31</p>
+              </div>
+
+              <div class="upload">
+                <p>Image upload</p>
+                <p>11-04-2016</p>
+              </div>
+            </div>
+          </li>
+          
+          <li>
+            <img src="src/img/selection/list/img6.png" srcset="src/img/selection/list/img6.png 1x, src/img/selection/list/img6@2x.png 2x" alt="6 image">
+            <div class="info">
+              <div class="today">
+                <p>Today</p>
+                <p><img src="src/img/ci_heart-fill.svg" alt="heart"> 128</p>
+                <p><img src="src/img/ic_round-mode-comment.svg" alt="info"> 31</p>
+              </div>
+
+              <div class="date">
+                <p>9-08-2016</p>
+                <p><img src="src/img/ci_heart-fill.svg" alt="heart"> 128</p>
+                <p><img src="src/img/ic_round-mode-comment.svg" alt="info"> 31</p>
+              </div>
+
+              <div class="upload">
+                <p>Image upload</p>
+                <p>11-04-2016</p>
+              </div>
+            </div>
+          </li>
+          
+          <li>
+            <img src="src/img/selection/list/img7.png" srcset="src/img/selection/list/img7.png 1x, src/img/selection/list/img7@2x.png 2x" alt="7 image">
+            <div class="info">
+              <div class="today">
+                <p>Today</p>
+                <p><img src="src/img/ci_heart-fill.svg" alt="heart"> 128</p>
+                <p><img src="src/img/ic_round-mode-comment.svg" alt="info"> 31</p>
+              </div>
+
+              <div class="date">
+                <p>9-08-2016</p>
+                <p><img src="src/img/ci_heart-fill.svg" alt="heart"> 128</p>
+                <p><img src="src/img/ic_round-mode-comment.svg" alt="info"> 31</p>
+              </div>
+
+              <div class="upload">
+                <p>Image upload</p>
+                <p>11-04-2016</p>
+              </div>
+            </div>
+          </li>
+          
+          <li>
+            <img src="src/img/selection/list/img8.png" srcset="src/img/selection/list/img8.png 1x, src/img/selection/list/img8@2x.png 2x" alt="8 image">
+            <div class="info">
+              <div class="today">
+                <p>Today</p>
+                <p><img src="src/img/ci_heart-fill.svg" alt="heart"> 128</p>
+                <p><img src="src/img/ic_round-mode-comment.svg" alt="info"> 31</p>
+              </div>
+
+              <div class="date">
+                <p>9-08-2016</p>
+                <p><img src="src/img/ci_heart-fill.svg" alt="heart"> 128</p>
+                <p><img src="src/img/ic_round-mode-comment.svg" alt="info"> 31</p>
+              </div>
+
+              <div class="upload">
+                <p>Image upload</p>
+                <p>11-04-2016</p>
+              </div>
+            </div>
+          </li>
+          
+          <li>
+            <img src="src/img/selection/list/img9.png" srcset="src/img/selection/list/img9.png 1x, src/img/selection/list/img9@2x.png 2x" alt="9 image">
+            <div class="info">
+              <div class="today">
+                <p>Today</p>
+                <p><img src="src/img/ci_heart-fill.svg" alt="heart"> 128</p>
+                <p><img src="src/img/ic_round-mode-comment.svg" alt="info"> 31</p>
+              </div>
+
+              <div class="date">
+                <p>9-08-2016</p>
+                <p><img src="src/img/ci_heart-fill.svg" alt="heart"> 128</p>
+                <p><img src="src/img/ic_round-mode-comment.svg" alt="info"> 31</p>
+              </div>
+
+              <div class="upload">
+                <p>Image upload</p>
+                <p>11-04-2016</p>
+              </div>
+            </div>
+          </li>
+          
+        </ul>
+
+        <button class="loadMore" type="button">load more</button>
+      </section>
+    </main>
+
+
+    <script type="module" src="/main.js"></script>
   </body>
 </html>
